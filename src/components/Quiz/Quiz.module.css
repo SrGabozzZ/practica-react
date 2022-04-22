@@ -1,0 +1,91 @@
+.quizDefault {
+    color: #373c41;
+    height:99vh;
+    width:99vw;
+    display:flex;
+    justify-content:center;
+    background-color:#fafbfc;
+    font-family:Trebuchet MS;
+}
+
+.quizDefaultChildren {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width:60vw;
+    height:60vh;
+    border-radius:7px;
+    margin-top: 7rem;  
+    background-color:#ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow-y: auto;
+}
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+
+}
+
+.choices {
+    grid-area:body;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+
+}
+
+.buttonMove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.buttonChoose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15%;
+    min-width: 100px;
+    height: 50px;
+    background-color:#19d2d8;
+    color:#3c4a5b;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:6px;
+    border: none;
+}
+
+.styleButton {
+    border: none;
+    padding: 10px 30px;
+    border-radius:5px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+
+.styleButton:hover {
+    background-color: #fce77c;
+}
+
+
+
+.correct {
+    color: #37d831;
+}
+
+.wrong {
+    color:#f80606
+}
+
+.correctA {
+    border:2px solid green;
+}
+

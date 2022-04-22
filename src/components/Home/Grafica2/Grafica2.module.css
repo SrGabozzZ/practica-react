@@ -1,0 +1,72 @@
+
+.containerGraph {
+    width: 100%;
+    height: 100%;
+    font-family: Poiret One;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(82, 80, 80);
+ }
+
+ .configGraph2 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+.tuerca {
+     cursor:pointer
+ }
+
+.svgContainer {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.svgCircleText {
+    font-size: 25px;
+    fill: rgb(66, 66, 66);
+    text-anchor: middle;
+    font-weight: bold;
+}
+
+
+.modalContainer {
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.75);
+    top:0;
+    left:0;
+}
+
+
+.modalItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 50%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.modalItemInput {
+    width: 8%;
+    min-width: 30px;
+    height: 10%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 2px;
+    font-size: 20px;
+}
+
+
+
+

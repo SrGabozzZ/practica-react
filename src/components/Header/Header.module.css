@@ -1,0 +1,256 @@
+
+
+
+body {
+	margin-top: 0;
+	position: relative;
+}
+
+
+.header {
+	z-index: 500;
+	display: grid;
+	position: fixed;
+	top: 0;
+	height: 55px;
+	background-color: #ffffff;
+	grid-template-areas: "logo perfil";
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+footer {
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	height: 55px;
+	width:100%;
+	background-color: #ffffff;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.barraLateraFooterItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 50px;
+    margin: 0 2px;
+	background-color: #edf3f7;
+	border-radius: 5px;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+.notifyCardItem1 {
+	display: flex;
+	padding: 8px 0px;
+    background-color: #ffffff;
+}
+
+.notifyCardInicialContainer {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 0 4px;
+	border:1px solid black;
+}
+
+.notifyName1 {
+	font-size: 15px;
+}
+
+.notifyName1Item2 {
+	font-size: 14px;
+	color:#818182;
+
+
+}
+
+.notifyName2Item {
+	padding: 9px 9px;
+}
+
+
+.notifyCardItem2 {
+	width: 100%;
+	height: 100px;
+	border-bottom:2px solid #6d6d6e;
+}
+
+.notifyCardItem3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:8px;
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	background-color: #fa98a4;
+	cursor: pointer;
+}
+
+.logo {
+	color: #4a5b75;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	grid-area: logo;
+	width: 30vw;
+	height: 55px;
+	min-width: 100px;
+}
+
+.logoItem {
+	border-bottom: 2px solid #fae85f;
+	margin-left: 1rem;
+
+}
+
+.buscador {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	grid-area:buscador;
+}
+
+.search {
+	display: none;
+	width: 65%;
+	height: 30px;
+	padding: 0px 10px;
+	border:none;
+	background-color: #edf3f7;
+	border-radius: 30px;
+	outline: none;
+
+}
+
+.perfil {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content:flex-end;
+	grid-area:perfil;
+	width: 70vw;
+	min-width: 138px;
+}
+
+.containerPerfilIniciales {
+	display: flex;
+	align-items: center;
+	color: white;
+    width: 70px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #edf3f7;
+	margin: 0 1rem;
+    cursor:pointer;
+ 
+}
+
+.iniciales {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background-color:#19d2d8; 
+	border-radius: 50%;
+
+}
+
+ .barraLateral {
+	display: none;
+   	position: fixed;
+   	top: 20%;
+   	margin-top: 1rem;
+   	width: 50px;
+   	height: 50vh;
+   	background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 5px;
+   }
+
+  .barraLateralItems {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+    height: 60px;
+   }
+
+   .barraLateralA {
+   	text-decoration: none;
+   }
+
+   .notifyCard {
+   	padding: 0 10px;
+   	width: 195px;
+   	height: 250px;
+   	position: absolute;
+   	top: 100%;
+   	right:30px;
+   	background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+    border-radius: 5px;
+   }
+
+   .notifyName2Item {
+   	padding: 9px 9px;
+   	font-family: arial;
+   	font-size: 14px;
+   	background-color: #edf3f7;
+   	margin-top: 2px;
+   	border-radius: 5px;
+   	color: #818182;
+   	font-weight: bold;
+   }
+
+@media screen and (min-width:641px ){
+   .header {
+
+	grid-template-areas: "logo buscador perfil";
+
+}
+
+
+.logo {
+  width: 30vw;
+  font-size: 2rem;
+}
+
+.buscador {
+	grid-area: buscador;
+	width: 40vw;
+    background-color: #ffffff;
+}
+
+.perfil{
+	width: 30vw;
+}
+
+
+.buscador {
+	display: flex;
+}
+
+
+.search {
+	display: inline-block;
+}
+
+.container-perfil-iniciales {
+    margin-right: 2rem;
+}
+
+
+
+}
+
+
+
+

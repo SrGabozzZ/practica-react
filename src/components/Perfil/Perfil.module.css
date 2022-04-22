@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.vista3Container {
+	margin-top: 55px;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-areas: "bg"
+	                     "perfil"
+	                     "switch"
+	                     "varios";
+
+}
+
+.item {
+	border: 1px solid black;
+}
+
+
+.bgPerfil {
+	grid-area: bg;
+	height: 25vh;
+	background: #0cebeb; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.containerPerfil {
+	position: relative;
+	grid-area: perfil;
+	height: 35vh;
+}
+
+
+.perfilItem {
+	position: absolute;
+	width: 100%;
+	height: 285px;
+	bottom: 16px;
+
+}
+
+.title {
+	font-size: 10px;
+	font-family: arial;
+	color: #39393b;
+}
+
+
+
+.inicialesPerfilContainer {
+	position: relative;
+	width: 100%;
+	height: 37%;
+}
+
+
+.inicialesPerfilContainerItem1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	outline: 4px solid #ffffff;
+	margin-left: 1rem;
+	bottom: 30px;
+
+	
+}
+
+.perfilItemCommon {
+	
+	padding: 0  0  1rem 1rem;
+}
+
+.perfilEditar {
+	color: #ffffff;
+	font-weight: bold;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #3ce9bb;
+}
+
+.switch {
+	display: flex;
+	justify-content: center;
+	grid-area: switch;
+	border:1px solid black;
+}
+
+.containerButtons {
+	width: 15%;
+	min-width: 110px;
+	height: 45px;
+	
+}
+
+.buttons {
+	width: 100%;
+	height: 100%;
+	border:none;
+	cursor: pointer;
+	background-color: #ffffff;
+	
+}
+
+
+.varios {
+	grid-area: varios;
+	height: 60vh;
+	border:1px solid black;
+}
+
+@media screen and (min-width:1024px ){
+
+.vista3Container {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-areas: "bg     bg     bg     bg     bg     bg     bg     bg     bg     bg     bg     bg"
+	                     "perfil perfil perfil perfil varios varios varios varios varios varios switch switch";
+	column-gap: 1rem;
+	                     
+
+}
+
+.containerButtons {
+	display: block;
+	width: 100%;
+
+}
+
+.bgPerfil {
+	grid-area: bg;
+	height: 30vh;
+}
+
+
+
+.containerPerfil {
+	grid-column: perfil;
+	margin-left: 50px;
+	display: flex;
+	justify-content: center;
+	width: 25vw;
+	height: 60vh;
+}
+
+
+.perfilItemCommon {
+	display: flex;
+	justify-content: center;
+}
+
+
+.varios {
+	grid-area: varios;
+	width: 40vw;
+	height: 60vh;
+}
+
+
+.switch {
+	display: block;
+	grid-area: switch;
+	width: 20vw;
+	height: 60vh;
+	
+}
+
+
+.perfilItem{
+	width: 80%;
+	padding: 1rem;
+	margin-bottom: 220px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: 325px;
+
+}
+
+.inicialesPerfilContainer {
+	position: static;
+	display: flex;
+	height: 140px;
+	justify-content: center;
+
+}
+
+.inicialesPerfilContainerItem1 {
+	width: 125px;
+	height: 125px;
+	position: static;
+
+}
+
+}
+

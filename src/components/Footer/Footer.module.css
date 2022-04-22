@@ -1,0 +1,25 @@
+.barraLateraFooterItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 50px;
+    margin: 0 2px;
+	background-color: #edf3f7;
+	border-radius: 5px;
+}
+
+
+   
+@media screen and (min-width:1025px ){
+
+	footer {
+   display: none;
+	}
+	
+	.barraLateral {
+	   display:inline-block
+   }
+  
+}
+   

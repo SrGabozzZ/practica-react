@@ -1,0 +1,142 @@
+
+
+ 
+/*329px*/
+
+.containerPerfil {
+	display:grid;
+	margin-top: 100px;
+	grid-template-areas: 
+	                   "cursos cursos"
+	                   "grafica1 grafica1"
+	                   "grafica2 grafica2"
+	                   "titulos titulos"
+}
+
+.cursos {
+	grid-area: cursos;
+	height: 40vw;
+	max-width: 620px;
+	max-height:243px;
+	min-height: 135px; 
+	background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+
+}
+
+.grafica1 {
+    min-width: 200px;
+	max-width: 620px;
+	height: 87vw;
+	min-height: 281px;
+	max-height: 330px;
+	grid-area:grafica1;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color:  #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	margin-bottom: 1rem;
+
+
+}
+
+.grafica2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    grid-area:grafica2;
+    height: 50vw;
+    min-height: 246px;
+    max-height: 330px;
+    max-width: 1024px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-bottom: 1rem;
+}
+
+
+
+.titulos {
+	grid-area: titulos;
+	height: 78vw;
+	max-width: 1024px;
+	max-height: 612px;
+	min-height: 178px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	margin-bottom: 1rem;
+	
+
+}
+
+.item-cursos {
+	width: 100%;
+	height:100%;
+	background-color: black;
+
+}
+
+@media screen and (min-width:640px ){
+
+.cursos {
+	grid-area: cursos;
+	height: 21vw;
+	max-height: 212px;
+	min-width: 641px;
+	max-width: 1000px;
+	padding: 1rem 2rem;
+}
+ .grafica1 {
+   	height: 99vw;
+    max-width: 958px;
+    max-height: 825px;
+    padding:1rem 3rem;
+
+}
+}
+
+
+@media screen and (min-width:1024px ){
+
+	.containerPerfil {
+	display:grid;
+	margin-left: 40px;
+	gap:1rem;
+	grid-template-areas: 
+	                   "cursos cursos cursos cursos cursos cursos cursos cursos cursos cursos cursos cursos"
+	                   "grafica1 grafica1 grafica1 grafica1 grafica1 grafica2 grafica2 grafica2  titulos titulos titulos titulos" ;
+	 padding: 0px 2rem;                  
+}
+	.cursos{
+		grid-area: cursos;
+		max-width: 100%;
+		min-width: 800px;
+		height: 212px;
+		
+	}
+
+	.grafica1{
+		width: 40vw;
+		grid-area: grafica1;
+		height: 300px;
+		padding: 1rem 24px;
+	}
+
+	.grafica2{
+	    width: 20vw;
+		grid-area:grafica2;
+		height: 300px;
+		padding: 1rem 24px;
+	}
+
+	.titulos {
+		width: 30vw;
+		grid-area: titulos;
+		height: 300px;
+		padding: 1rem 24px;
+    }
+}
